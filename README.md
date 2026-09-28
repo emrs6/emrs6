@@ -74,10 +74,29 @@ A desktop app that calculates the delivered cost per ton for each destination an
 
 ## 🧰 Tech
 
-**Core:** Python · Kotlin · C# · JavaScript<br>
-**Industrial:** Raspberry Pi · Modbus RTU · RS-485 · MQTT<br>
-**Software:** Jetpack Compose · Node.js · FastAPI · WinUI 3<br>
-**AI / Vision:** OpenCV · YOLO · TensorFlow / PyTorch
+**Core**<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Industrial**<br>
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![Modbus RTU](https://img.shields.io/badge/Modbus_RTU-2F4858?style=for-the-badge)
+![RS-485](https://img.shields.io/badge/RS--485-2F4858?style=for-the-badge)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
+
+**Software**<br>
+![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![WinUI 3](https://img.shields.io/badge/WinUI_3-0078D4?style=for-the-badge)
+
+**AI / Vision**<br>
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-111F68?style=for-the-badge&logo=yolo&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
 <details>
 <summary><b>🇹🇷 Türkçe</b></summary>
