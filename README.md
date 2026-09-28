@@ -5,8 +5,6 @@
 **Building AI-powered industrial systems**<br>
 Automation · Embedded · Computer Vision
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3500&pause=1200&color=36BCF7&center=true&vCenter=true&width=560&lines=Raspberry+Pis+on+the+plant+floor;Modbus+RTU+%E2%86%92+live+dashboards+%E2%86%92+Android;Closed-loop+control%2C+shadow+mode+first;YOLOv8+%2B+OCR+on+the+edge" alt="Raspberry Pis on the plant floor · Modbus RTU → live dashboards → Android · Closed-loop control, shadow mode first · YOLOv8 + OCR on the edge" />
-
 📍 Bursa, Türkiye &nbsp;·&nbsp; 🏭 [Etna Maden](https://www.etnamaden.com)
 
 </div>
@@ -21,7 +19,7 @@ I like problems where software meets the physical world: motors, sensors, camera
 
 ## 🏭 Selected work
 
-<sub>🔒 = private, company-internal code. I can't share the source, but I'm happy to talk about it.</sub>
+<sub>🔒 = private, company-internal code. Source code is proprietary, but I'm happy to discuss the architecture and engineering decisions.</sub>
 
 ### 🍓 Industrial edge & control platform 🔒
 
@@ -31,7 +29,7 @@ Edge software for acquiring real-time data from industrial drives, sensors and p
 
 ### 📱 EtnaApp: production monitoring for Android 🔒
 
-A native Android app for real-time production monitoring, alerts and reporting, rewritten from .NET MAUI in Kotlin and Jetpack Compose.
+A native Android app for real-time production monitoring, alerts, reporting and authorized remote control, rewritten from .NET MAUI in Kotlin and Jetpack Compose.
 
 <sub>Kotlin · Jetpack Compose · Material 3 · Firebase Cloud Messaging</sub>
 
@@ -59,10 +57,11 @@ A desktop app that calculates the delivered cost per ton for each destination an
 
 <sub>C# · WinUI 3 · Python</sub>
 
-## 🛠️ How I work
+## 🛠️ Engineering principles
 
-- **Tested and documented:** automated tests across the stack, documentation verified on site.
-- **AI-assisted:** I build with Claude Code, with tests and documentation as guardrails.
+- **Validate before deployment:** control logic is tested in simulation or shadow mode before live operation.
+- **Build for reliability:** monitoring, failure handling and recovery are treated as part of the system design.
+- **Document the system:** architecture and data flows are maintained alongside the code.
 
 ## 🔬 Current focus
 
@@ -110,7 +109,7 @@ Bursa'daki **Etna Maden**'de endüstriyel izleme, otomasyon ve süreç optimizas
 **Seçili işler**
 
 - 🍓 **Endüstriyel edge ve kontrol platformu:** Endüstriyel sürücülerden, sensörlerden ve üretim ekipmanlarından gerçek zamanlı veri toplama, merkezi izleme ve kapalı çevrim süreç kontrolü. Kontrol mantığı, bir motoru hareket ettirmesine izin verilmeden önce gölge modda çalışıyor.
-- 📱 **EtnaApp:** Gerçek zamanlı üretim izleme, alarm ve raporlama için native Android uygulaması
+- 📱 **EtnaApp:** Gerçek zamanlı üretim izleme, alarm, raporlama ve yetkili uzaktan kontrol için native Android uygulaması
 - 🗺️ **Dijital ikiz:** Tesisin BT/OT sistemlerinin koddan çıkarılıp sahada doğrulanmış dokümantasyonu
 - 🌐 **Web:** [etnamaden.com](https://www.etnamaden.com), tasarımı ve geliştirmesi bana ait
 - 🚗 **Görüntü işleme:** [TurkPlakaOkuyucu](https://github.com/emrs6/TurkPlakaOkuyucu), YOLOv8 + OCR ile Türk plakası okuma
