@@ -2,7 +2,7 @@
 
 # Hi, I'm Emre 👋
 
-**Building AI-powered industrial systems**<br>
+**Building software for intelligent industrial systems**<br>
 Automation · Embedded · Computer Vision
 
 📍 Bursa, Türkiye &nbsp;·&nbsp; 🏭 [Etna Maden](https://www.etnamaden.com)
@@ -68,7 +68,7 @@ A desktop app that calculates the delivered cost per ton for each destination an
 - Data-driven industrial optimization
 - Closed-loop control systems
 - Edge AI and industrial computer vision
-- Reliable software for physical systems
+- Industrial reliability and fault-tolerant systems
 - Delay-tolerant communication for disaster environments (🕊️ *Güvercin*, early stage)
 
 ## 🧰 Tech
@@ -119,7 +119,7 @@ Bursa'daki **Etna Maden**'de endüstriyel izleme, otomasyon ve süreç optimizas
 - Veriye dayalı endüstriyel optimizasyon
 - Kapalı çevrim kontrol sistemleri
 - Edge AI ve endüstriyel görüntü işleme
-- Fiziksel sistemler için güvenilir yazılım
+- Endüstriyel güvenilirlik ve hataya dayanıklı sistemler
 - Afet bölgeleri için gecikmeye dayanıklı iletişim (🕊️ *Güvercin*, erken aşama)
 
 </details>
