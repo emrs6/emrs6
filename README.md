@@ -15,112 +15,69 @@ Automation · Embedded · Computer Vision
 
 ## 👋 About me
 
-I build the software that monitors and controls our plant at **Etna Maden**, a calcite (calcium carbonate) producer in Bursa. It covers the whole chain: Raspberry Pis wired to motors and sensors on the plant floor, a real-time server in the middle, and the Android app operators carry in their pockets.
+I design and build software for industrial monitoring, automation and process optimization at **Etna Maden**.
 
 I like problems where software meets the physical world: motors, sensors, cameras, and the people who work with them.
 
-- 🔭 **Currently:** digitising our plant end to end (edge, backend, mobile and documentation)
-- 🌱 **Exploring:** 🕊️ *Güvercin*, a delay-tolerant emergency communication and coordination network for disaster areas
-- 💬 **Ask me about:** Modbus RTU on a Raspberry Pi, keeping Pis running 24/7 in a factory, Jetpack Compose, YOLO + OCR
-
-## 🏭 Featured work
+## 🏭 Selected work
 
 <sub>🔒 = private, company-internal code. I can't share the source, but I'm happy to talk about it.</sub>
 
-### 🍓 Plant-floor edge platform 🔒
+### 🍓 Industrial edge & control platform 🔒
 
-Python services on a fleet of Raspberry Pis that read and control VFDs and soft starters over **Modbus RTU / RS-485**, track silo levels (4–20 mA) and detect conveyor jams. A central Node.js server ties them together with REST + WebSocket, SQLite history, JWT auth, push alerts, work orders and maintenance records.
+Edge software for acquiring real-time data from industrial drives, sensors and production equipment, with centralized monitoring and closed-loop process control. Control logic runs in shadow mode before it is allowed to move a motor.
 
-Its closed-loop mode keeps the mills' motor current inside the target band by adjusting the feed conveyor's speed. It ran in log-only *shadow mode* before it was allowed to move a motor.
+<sub>Python · Modbus RTU · RS-485 · Raspberry Pi · Node.js · WebSocket</sub>
 
-<sub>**Stack:** Python · asyncio · pymodbus · FastAPI · Node.js · Express · WebSocket · SQLite · systemd · pytest</sub>
+### 📱 EtnaApp: production monitoring for Android 🔒
 
-### 📱 EtnaApp: plant monitoring & control for Android 🔒
+A native Android app for real-time production monitoring, alerts and reporting, rewritten from .NET MAUI in Kotlin and Jetpack Compose.
 
-A native Kotlin + Jetpack Compose rewrite of an earlier .NET MAUI app. It shows live silo levels, motor currents and drive frequencies with charts, and adds remote speed control with locking and role-based access, alarms and push notifications, work orders with photo evidence, daily and monthly reports, and quality-lab screens with a guided camera test. Backed by 1,300+ unit tests.
+<sub>Kotlin · Jetpack Compose · Material 3 · Firebase Cloud Messaging</sub>
 
-<sub>**Stack:** Kotlin · Jetpack Compose · Material 3 · Retrofit · OkHttp · CameraX · Firebase Cloud Messaging</sub>
+### 🗺️ Plant digital twin 🔒
 
-### 🗺️ Plant digital twin (documentation) 🔒
+Living documentation of the plant's IT/OT systems, derived from the code and verified on site.
 
-A living map of the plant's IT/OT systems: devices, services, data flows, control logic, failure impact, backup and recovery. It is written from the code, verified on site and drawn with Mermaid. It also ships an AI-assistant skill that makes coding agents read the docs before they propose any change to the plant.
-
-<sub>**Stack:** Markdown · Mermaid · HTML</sub>
+<sub>Markdown · Mermaid</sub>
 
 ### 🌐 [etnamaden.com](https://www.etnamaden.com)
 
-The company website, designed and built by me: bilingual (TR/EN), ~60 pages, hreflang + JSON-LD SEO, a PWA manifest, a 115-frame scroll animation with a WebP image pipeline, and a hardened quote form (CSP, honeypot, rate limiting, KVKK consent).
+The company website, designed and built by me: bilingual (TR/EN), SEO-focused, with a scroll-driven animation and a hardened quote form.
 
-<sub>**Stack:** HTML · CSS · JavaScript · PHP · Node.js (Sharp)</sub>
+<sub>HTML · CSS · JavaScript · PHP</sub>
 
 ### 🚗 [TurkPlakaOkuyucu](https://github.com/emrs6/TurkPlakaOkuyucu): Turkish licence-plate reader
 
-A custom-trained YOLOv8n detector plus Tesseract / EasyOCR, with Turkish plate-format validation. It runs on a Raspberry Pi (Picamera2, I²C LCD) or on Windows with CUDA; an early prototype opened a gate through an Arduino for whitelisted plates.
+A custom-trained YOLOv8 detector with Tesseract / EasyOCR and Turkish plate-format validation, running on a Raspberry Pi or a CUDA GPU.
 
-<sub>**Stack:** Python · OpenCV · Ultralytics YOLOv8 · EasyOCR · Tesseract · Raspberry Pi · Arduino</sub>
+<sub>Python · OpenCV · YOLOv8 · EasyOCR · Tesseract</sub>
 
 ### 🚚 Delivery cost calculator 🔒
 
-A WinUI 3 desktop app that works out the delivered cost per ton for every destination and exports Excel price lists. Small Python helpers ([EtnaFilesUpdates](https://github.com/emrs6/EtnaFilesUpdates)) fetch the current diesel price and build the spreadsheets.
+A desktop app that calculates the delivered cost per ton for each destination and exports Excel price lists, with small Python helpers ([EtnaFilesUpdates](https://github.com/emrs6/EtnaFilesUpdates)).
 
-<sub>**Stack:** C# · .NET · WinUI 3 · Python · pandas · BeautifulSoup</sub>
-
-## 🧰 Tech stack
-
-**Languages**<br>
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-
-**Industrial & embedded**<br>
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)
-![Modbus RTU](https://img.shields.io/badge/Modbus_RTU-2F4858?style=for-the-badge)
-![RS-485](https://img.shields.io/badge/RS--485-2F4858?style=for-the-badge)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![systemd](https://img.shields.io/badge/systemd-2F4858?style=for-the-badge)
-
-**Apps & backend**<br>
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
-![WinUI 3](https://img.shields.io/badge/WinUI_3-0078D4?style=for-the-badge)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-2F4858?style=for-the-badge)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
-
-**Computer vision & data**<br>
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=yolo&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-**Tools**<br>
-![Git](https://img.shields.io/badge/Git-F03C2E?style=for-the-badge&logo=git&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![Mermaid](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white)
+<sub>C# · WinUI 3 · Python</sub>
 
 ## 🛠️ How I work
 
-- **Safety first on the plant floor.** New control logic runs in log-only shadow mode before it can move a motor. Watchdogs, UPS monitoring and backups are part of the design, not an afterthought.
-- **Tested.** pytest and JS test suites on the edge platform, 1,300+ unit tests in the Android app.
-- **Documented.** Devices, services and data flows are written down and verified on site.
-- **AI-assisted, with guardrails.** I build with Claude Code, and the plant documentation doubles as a guardrail: the assistant has to read it before touching anything.
+- **Tested and documented:** automated tests across the stack, documentation verified on site.
+- **AI-assisted:** I build with Claude Code, with tests and documentation as guardrails.
 
-## 🗺️ Journey
+## 🔬 Current focus
 
-- **2020:** joined GitHub; first hobby project, a Discord music bot
-- **2023:** got into computer vision with a Turkish licence-plate reader (YOLOv8 + OCR); built the first internal tools for Etna Maden (C# / WinUI 3, Python)
-- **2026:** digitising the plant end to end: Raspberry Pi edge platform, native Android app, digital-twin documentation and a new company website
-- **Next:** 🕊️ *Güvercin*, delay-tolerant emergency communication for disaster areas
+- Data-driven industrial optimization
+- Closed-loop control systems
+- Edge AI and industrial computer vision
+- Reliable software for physical systems
+- Delay-tolerant communication for disaster environments (🕊️ *Güvercin*, early stage)
+
+## 🧰 Tech
+
+**Core:** Python · Kotlin · C# · JavaScript<br>
+**Industrial:** Raspberry Pi · Modbus RTU · RS-485 · MQTT<br>
+**Software:** Jetpack Compose · Node.js · FastAPI · WinUI 3<br>
+**AI / Vision:** OpenCV · YOLO · TensorFlow / PyTorch
 
 <details>
 <summary><b>🇹🇷 Türkçe</b></summary>
@@ -129,16 +86,23 @@ A WinUI 3 desktop app that works out the delivered cost per ton for every destin
 
 Merhaba, ben Emre 👋
 
-Bursa'da kalsit (kalsiyum karbonat) üreticisi **Etna Maden**'de tesisi izleyen ve yöneten yazılımları uçtan uca geliştiriyorum: sahadaki motor ve sensörlere bağlı Raspberry Pi'lardan gerçek zamanlı sunucuya, oradan da operatörlerin cebindeki Android uygulamasına kadar.
+Bursa'daki **Etna Maden**'de endüstriyel izleme, otomasyon ve süreç optimizasyonu için yazılım tasarlayıp geliştiriyorum. Yazılımın fiziksel dünyayla buluştuğu problemleri seviyorum: motorlar, sensörler, kameralar ve onlarla çalışan insanlar.
 
-- 🍓 **Saha (edge):** Sürücüleri ve soft starter'ları Modbus RTU / RS-485 üzerinden okuyup kontrol eden, silo seviyelerini ve bant sıkışmalarını izleyen Python servisleri
-- 🧠 **Kontrol:** Değirmen akımını hedef amper bandında tutan kapalı çevrim besleme kontrolü; motora dokunmadan önce yalnızca log tutan "gölge modda" test edildi
-- 🖥️ **Sunucu:** REST + WebSocket ile canlı veri, alarmlar, raporlar, iş emirleri ve bakım kayıtları (Node.js, SQLite)
-- 📱 **Mobil:** İzleme, uzaktan kontrol ve bakım için native Android uygulaması (Kotlin, Jetpack Compose)
+**Seçili işler**
+
+- 🍓 **Endüstriyel edge ve kontrol platformu:** Endüstriyel sürücülerden, sensörlerden ve üretim ekipmanlarından gerçek zamanlı veri toplama, merkezi izleme ve kapalı çevrim süreç kontrolü. Kontrol mantığı, bir motoru hareket ettirmesine izin verilmeden önce gölge modda çalışıyor.
+- 📱 **EtnaApp:** Gerçek zamanlı üretim izleme, alarm ve raporlama için native Android uygulaması
 - 🗺️ **Dijital ikiz:** Tesisin BT/OT sistemlerinin koddan çıkarılıp sahada doğrulanmış dokümantasyonu
 - 🌐 **Web:** [etnamaden.com](https://www.etnamaden.com), tasarımı ve geliştirmesi bana ait
-- 👁️ **Görüntü işleme:** [TurkPlakaOkuyucu](https://github.com/emrs6/TurkPlakaOkuyucu), YOLOv8 + OCR ile Türk plakalarını okuma
-- 🕊️ **Sırada:** *Güvercin*, afet bölgeleri için gecikmeye dayanıklı acil durum iletişim ve koordinasyon ağı
+- 🚗 **Görüntü işleme:** [TurkPlakaOkuyucu](https://github.com/emrs6/TurkPlakaOkuyucu), YOLOv8 + OCR ile Türk plakası okuma
+
+**Şu anki odağım**
+
+- Veriye dayalı endüstriyel optimizasyon
+- Kapalı çevrim kontrol sistemleri
+- Edge AI ve endüstriyel görüntü işleme
+- Fiziksel sistemler için güvenilir yazılım
+- Afet bölgeleri için gecikmeye dayanıklı iletişim (🕊️ *Güvercin*, erken aşama)
 
 </details>
 
